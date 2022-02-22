@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+
+    <!-- xzoom -->
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css" />
+
+    <!-- gijgo -->
+    <link rel="stylesheet" href="frontend/libraries/gijgo/css/gijgo.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="frontend/styles/main.css" />
+
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css" />
+
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+        <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+          <a href="index.html" class="navbar-brand">
+            <img src="frontend/images/logo_nomads.png" alt="" />
+          </a>
+        </div>
+        <ul class="navbar-nav mr-auto d-none d-lg-block">
+          <li>
+            <span class="text-muted"> | &nbsp; Beyond the explorer of the world </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Akhir Navbar -->
+
+    <!-- Main -->
+    <div class="section-success d-flex align-items-center">
+      <div class="col text-center">
+        <img src="frontend/images/ic_mail.png" alt="" />
+        <h1>Yay! Success</h1>
+        <p>
+          We’ve sent you email for trip instruction
+          <br />
+          please read it as well
+        </p>
+        <a href="index.html" class="btn btn-home-page mt-3 px-5"> Home Page </a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="frontend/libraries/retina/retina.min.js"></script>
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script src="frontend/libraries/gijgo/js/gijgo.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".xzoom, .xzoom-gallery").xzoom({
+          zoomWidth: 500,
+          title: false,
+          tint: "#333",
+          Xoffset: 15,
+        });
+
+        $(".datepicker").datepicker({
+          uiLibrary: "bootstrap4",
+          icons: {
+            rightIcon: '<img src="frontend/images/ic_doe.png" />',
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
